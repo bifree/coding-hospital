@@ -117,12 +117,6 @@ p{
     margin: 0 auto;
 }
 
-.message{
-    height:664px;
-    background: #ff9;
-    display: flex;
-}
-
 .message--text{
     width: 490px;
 }
@@ -130,6 +124,12 @@ p{
 .message--img{
     flex-grow: 1;
     margin-top: 162px;
+    margin-left: 44px;
+    width: 60%;
+}
+
+#main-photo{
+    width: 100%;
 }
 
 .contents{
@@ -179,4 +179,37 @@ tr{
 
 .td--date{
     color: #21A937;
+}
+
+.main_title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 40px 0;
+    text-transform: capitalize;
+}
+
+.main_content {
+    display: flex;
+    height:664px;
+    background: #ff9;
+}
+
+.text_block {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.text_title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.discription {
+    line-height: 1.7;
+    margin: 30px 0;
+    padding-right: 45px;
+}
+
+.main_img {
+    width: 60%;
 }
