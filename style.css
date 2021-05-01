@@ -109,10 +109,7 @@ h2{
 
 p{
     font-size: 16px;
-}
-
-main{
-
+    line-height: 38px;
 }
 
 .container{
@@ -123,6 +120,16 @@ main{
 .message{
     height:664px;
     background: #ff9;
+    display: flex;
+}
+
+.message--text{
+    width: 490px;
+}
+
+.message--img{
+    flex-grow: 1;
+    margin-top: 162px;
 }
 
 .contents{
@@ -149,6 +156,10 @@ main{
     background: #FFFFFF;
 }
 
+.content-title{
+    padding: 40px;
+}
+
 .h2--news{
     padding-top: 80px;
 }
@@ -160,4 +171,12 @@ main{
     opacity: 1;
     margin-top: 70px;
     height: 390px;
+}
+
+tr{
+    font-weight: normal;
+}
+
+.td--date{
+    color: #21A937;
 }
