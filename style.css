@@ -152,8 +152,17 @@ p{
     margin-top: 33px;
     border: 2px solid #C9C9C9;
     height: 590px;
-    text-align: left;
+    /* text-align: left; */
     background: #FFFFFF;
+}
+
+.content-text {
+    margin: 0 auto;
+}
+
+.content-text > p{
+    font-size: 12px;
+    text-align: left;
 }
 
 .content-title{
@@ -171,6 +180,13 @@ p{
     opacity: 1;
     margin-top: 70px;
     height: 390px;
+    text-align: center;
+}
+
+table {
+    font-size: 12px;
+    line-height: 38px;
+    margin: 0 auto;
 }
 
 tr{
