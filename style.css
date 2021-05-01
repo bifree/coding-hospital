@@ -100,3 +100,57 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+/*---- ここからコーディング ----*/
+
+h2{
+    font-size: 24px;
+}
+
+p{
+    font-size: 16px;
+}
+
+main{
+
+}
+
+.container{
+    width: 62%;
+    margin: 0 auto;
+}
+
+.message{
+    height:664px;
+    background: #ff9;
+}
+
+.contents{
+    height: 1520px;
+    background: #F5FCF8;
+    text-align: center;
+}
+
+.h2--treat{
+    padding-top: 80px;
+}
+
+.treatment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content{
+    width: 32%;
+    margin-top: 33px;
+    border: 2px solid #C9C9C9;
+    height: 590px;
+    text-align: left;
+}
+
+.news-list{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 30px;
+    opacity: 1;
+}
