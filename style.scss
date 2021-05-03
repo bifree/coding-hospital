@@ -10,6 +10,21 @@ p{
 .container{
 	width: 62%;
 	margin: 0 auto;
+	.h2--treat{
+		padding-top: 80px;
+	}
+	.treatment{
+		display: flex;
+		justify-content: space-between;
+		.content{
+			width: 32%;
+			margin-top: 33px;
+			border: 2px solid #C9C9C9;
+			height: 590px;
+			/* text-align: left; */
+			background: #FFFFFF;
+		}
+	}
 }
 
 .message--text{
@@ -33,23 +48,11 @@ p{
 	text-align: center;
 }
 
-.h2--treat{
-	padding-top: 80px;
-}
 
-.treatment{
-	display: flex;
-	justify-content: space-between;
-}
 
-.content{
-	width: 32%;
-	margin-top: 33px;
-	border: 2px solid #C9C9C9;
-	height: 590px;
-	/* text-align: left; */
-	background: #FFFFFF;
-}
+
+
+
 
 .content-text {
 	margin: 0 auto;
