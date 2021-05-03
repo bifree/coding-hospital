@@ -52,7 +52,23 @@ body p {
           justify-content: space-between;
 }
 
-.container .treatment .content .content-text > p {
+@media (max-width: 767px) {
+  .container .treatment .content {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+  }
+}
+
+.container .treatment .content .content-title {
+  padding: 40px;
+}
+
+.container .treatment .content .content-text {
+  margin: 0 auto;
+}
+
+.container .treatment .content .content-text p {
   font-size: 16px;
   text-align: left;
 }
@@ -67,6 +83,16 @@ body p {
 .main_content .text_block {
   width: 40%;
   margin-top: 160px;
+}
+
+@media (max-width: 767px) {
+  .main_content .text_block {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .main_content .text_block p {
+    margin-top: 0;
+  }
 }
 
 .main_content .text_block h2 {
@@ -85,15 +111,7 @@ body p {
   text-align: center;
 }
 
-.content-text {
-  margin: 0 auto;
-}
-
-.content-title {
-  padding: 40px;
-}
-
-.h2--news {
+.contents .h2--news {
   padding-top: 80px;
 }
 
@@ -109,7 +127,7 @@ body p {
 }
 
 table {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 50px;
   margin: 0 auto;
 }
@@ -162,7 +180,6 @@ table tr .td--text {
 
 @media screen and (max-width: 600px) {
   .main_content {
-    /* background: yellow; */
     display: block;
     height: 500px;
   }
@@ -174,29 +191,14 @@ table tr .td--text {
   .main-photo {
     width: 100%;
   }
-  .text_block {
-    width: 100%;
-    margin-top: 10px;
-  }
-  .text_block > p {
-    margin-top: 0;
-  }
   .h2--treat {
     padding-top: 100px;
   }
   .treatment {
     display: block;
   }
-  .treat-explain {
-    font-size: 12px;
-  }
   .contents {
     margin-top: 30px;
-  }
-  .content {
-    width: 100%;
-    border: none;
-    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
