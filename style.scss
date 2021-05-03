@@ -1,10 +1,11 @@
-h2{
-	font-size: 24px;
-}
-
-p{
-	font-size: 16px;
-	line-height: 38px;
+body{
+	h2{
+		font-size: 24px;
+	}
+	p{
+		font-size: 16px;
+		line-height: 38px;
+	}
 }
 
 .container{
@@ -24,9 +25,17 @@ p{
 			width: 32%;
 			margin-top: 33px;
 			border: 2px solid #C9C9C9;
+			margin-right: 10px;
+			padding: 0 24px;
 			height: 590px;
-			/* text-align: left; */
 			background: #FFFFFF;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.content-text > p{
+				font-size: 16px;
+				text-align: left;
+			}
 		}
 	}
 }
@@ -37,22 +46,15 @@ p{
 	.text_block {
 		width: 40%;
 		margin-top: 160px;
+		h2{
+			line-height: 56px;
+		}
+		p{
+			font-size: 16px;
+			width: 90%;
+			margin-top: 37px;
+		}
 	}
-}
-
-.message--text{
-	width: 490px;
-}
-
-.message--img{
-	flex-grow: 1;
-	margin-top: 162px;
-	margin-left: 44px;
-	width: 60%;
-}
-
-#main-photo{
-	width: 100%;
 }
 
 .contents{
@@ -63,11 +65,6 @@ p{
 
 .content-text {
 	margin: 0 auto;
-}
-
-.content-text > p{
-	font-size: 12px;
-	text-align: left;
 }
 
 .content-title{
@@ -84,7 +81,6 @@ p{
 	border-radius: 30px;
 	opacity: 1;
 	margin-top: 70px;
-	height: 390px;
 	text-align: center;
 	padding: 40px 0;
 }
@@ -93,69 +89,43 @@ table {
 	font-size: 12px;
 	line-height: 50px;
 	margin: 0 auto;
-}
-
-tr{
-	font-weight: normal;
-}
-
-td{
-	border-bottom: 1px solid #00000029;
-	letter-spacing: 0px;
-	padding-left: 30px;
-}
-
-.td--date{
-	color: #21A937;
-}
-
-.category{
-	background: #000;
-	color: #fff;
-	line-height: 12px;
-}
-
-
-
-.text_block > h2{
-	line-height: 56px;
-}
-
-.text_block > p{
-	font-size: 12px;
-	width: 90%;
-	margin-top: 37px;
-}
-
-.text_title {
-	font-size: 2rem;
-	font-weight: bold;
+	tr{
+		font-weight: normal;
+		td{
+			border-bottom: 1px solid #00000029;
+			letter-spacing: 0px;
+			padding-left: 30px;
+			.category{
+				background: #000;
+				color: #fff;
+				line-height: 12px;
+			}
+		}
+		.td--date{
+			color: #21A937;
+		}
+		.td--text{
+			text-align: initial;
+		}
+	}
 }
 
 .show_all{
 	padding-top: 30px;
 	justify-content: flex-end;
-}
-
-.show_all > a{
-	color: #000;
-	text-decoration: none;
-}
-
-.discription {
-	line-height: 1.7;
-	margin: 30px 0;
-	padding-right: 45px;
+	a{
+		color: #000;
+		text-decoration: none;
+		display: inline-block;
+	}
 }
 
 .main_img {
 	width: 60%;
 	margin-top: 162px;
-	/* background: yellow; */
-}
-
-.main_img > img{
-	width: 100%;
+	img{
+		width: 100%;
+	}
 }
 
 @media screen and (max-width:600px){
