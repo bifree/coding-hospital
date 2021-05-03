@@ -1,105 +1,204 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+h2 {
+  font-size: 24px;
 }
 
-body {
-    line-height:1;
+p {
+  font-size: 16px;
+  line-height: 38px;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+.container {
+  width: 62%;
+  margin: 0 auto;
 }
 
-nav ul {
-    list-style:none;
+.container .h2--treat {
+  padding-top: 80px;
 }
 
-blockquote, q {
-    quotes:none;
+.container .treatment {
+  display: flex;
+  justify-content: space-between;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+.container .treatment .content {
+  width: 32%;
+  margin-top: 33px;
+  border: 2px solid #C9C9C9;
+  height: 590px;
+  /* text-align: left; */
+  background: #FFFFFF;
 }
 
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+.message--text {
+  width: 490px;
 }
 
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+.message--img {
+  flex-grow: 1;
+  margin-top: 162px;
+  margin-left: 44px;
+  width: 60%;
 }
 
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+#main-photo {
+  width: 100%;
 }
 
-del {
-    text-decoration: line-through;
+.contents {
+  height: 1520px;
+  background: #F5FCF8;
+  text-align: center;
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+.content-text {
+  margin: 0 auto;
+}
+
+.content-text > p {
+  font-size: 12px;
+  text-align: left;
+}
+
+.content-title {
+  padding: 40px;
+}
+
+.h2--news {
+  padding-top: 80px;
+}
+
+.news-list {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 30px;
+  opacity: 1;
+  margin-top: 70px;
+  height: 390px;
+  text-align: center;
+  padding: 40px 0;
 }
 
 table {
-    border-collapse:collapse;
-    border-spacing:0;
+  font-size: 12px;
+  line-height: 50px;
+  margin: 0 auto;
 }
 
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+tr {
+  font-weight: normal;
 }
 
-input, select {
-    vertical-align:middle;
+td {
+  border-bottom: 1px solid #00000029;
+  letter-spacing: 0px;
+  padding-left: 30px;
 }
 
-/*---- ここからコーディング ----*/
+.td--date {
+  color: #21A937;
+}
 
+.category {
+  background: #000;
+  color: #fff;
+  line-height: 12px;
+}
+
+.main_content {
+  display: flex;
+  height: 664px;
+  /* background: #ff9; */
+}
+
+.text_block {
+  width: 40%;
+  /* background: #21A937; */
+  margin-top: 160px;
+}
+
+.text_block > h2 {
+  line-height: 56px;
+}
+
+.text_block > p {
+  font-size: 12px;
+  width: 90%;
+  margin-top: 37px;
+}
+
+.text_title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.show_all {
+  padding-top: 30px;
+  justify-content: flex-end;
+}
+
+.show_all > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.discription {
+  line-height: 1.7;
+  margin: 30px 0;
+  padding-right: 45px;
+}
+
+.main_img {
+  width: 60%;
+  margin-top: 162px;
+  /* background: yellow; */
+}
+
+.main_img > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    display: block;
+    /* background: #21A937; */
+  }
+  .main_content {
+    /* background: yellow; */
+    display: block;
+    height: 500px;
+  }
+  .main_img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .main-photo {
+    width: 100%;
+  }
+  .text_block {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .text_block > p {
+    margin-top: 0;
+  }
+  .h2--treat {
+    padding-top: 100px;
+  }
+  .treatment {
+    display: block;
+  }
+  .treat-explain {
+    font-size: 12px;
+  }
+  .contents {
+    margin-top: 30px;
+  }
+  .content {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+  }
+}
