@@ -32,9 +32,20 @@ body{
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			.content-text > p{
-				font-size: 16px;
-				text-align: left;
+			@media(max-width:767px){
+				width: 100%;
+				border: none;
+				margin-bottom: 20px;
+			}
+			.content-title{
+				padding: 40px;
+			}
+			.content-text {
+				margin: 0 auto;
+				p{
+					font-size: 16px;
+					text-align: left;
+				}
 			}
 		}
 	}
@@ -46,6 +57,13 @@ body{
 	.text_block {
 		width: 40%;
 		margin-top: 160px;
+		@media(max-width:767px) {
+			width: 100%;
+			margin-top: 10px;
+			p{
+				margin-top: 0;
+		}
+	}
 		h2{
 			line-height: 56px;
 		}
@@ -61,18 +79,9 @@ body{
 	height: 1520px;
 	background: #F5FCF8;
 	text-align: center;
-}
-
-.content-text {
-	margin: 0 auto;
-}
-
-.content-title{
-	padding: 40px;
-}
-
-.h2--news{
-	padding-top: 80px;
+	.h2--news{
+		padding-top: 80px;
+	}
 }
 
 .news-list{
@@ -86,7 +95,7 @@ body{
 }
 
 table {
-	font-size: 12px;
+	font-size: 16px;
 	line-height: 50px;
 	margin: 0 auto;
 	tr{
@@ -131,7 +140,6 @@ table {
 @media screen and (max-width:600px){
 
 	.main_content {
-			/* background: yellow; */
 			display: block;
 			height: 500px;
 	}
@@ -146,15 +154,6 @@ table {
 			width: 100%;
 	}
 
-	.text_block {
-			width: 100%;
-			margin-top: 10px;
-	}
-
-	.text_block > p{
-			margin-top: 0;
-	}
-
 	.h2--treat {
 			padding-top: 100px;
 	}
@@ -163,17 +162,7 @@ table {
 			display: block;
 	}
 
-	.treat-explain {
-			font-size: 12px;
-	}
-
 	.contents{
 			margin-top: 30px;
-	}
-
-	.content{
-			width: 100%;
-			border: none;
-			margin-bottom: 20px;
 	}
 }
