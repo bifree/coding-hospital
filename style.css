@@ -158,9 +158,8 @@ table tr .td--text {
 
 .show_all {
   padding-top: 30px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  text-align: end;
+  padding-right: 60px;
 }
 
 .show_all a {
