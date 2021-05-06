@@ -1,3 +1,18 @@
+body {
+  color: #444444;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body, body h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
 body h2 {
   font-size: 24px;
 }
@@ -5,6 +20,78 @@ body h2 {
 body p {
   font-size: 16px;
   line-height: 38px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.header .top_access {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header .top_access .reception_time {
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.telephone {
+  display: flex;
+  align-items: center;
+}
+
+.telephone .tel {
+  margin: 0;
+  font-size: 24px;
+  padding-left: 5px;
+}
+
+.telephone .tel a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #21A937;
+}
+
+.top_mv {
+  position: relative;
+}
+
+.top_mv img {
+  width: 100%;
+}
+
+.top_mv .top_text {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.top_mv .top_text .inner_text {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -moz-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  background: white;
+  height: 50%;
+  padding: 2rem 2rem 0;
+}
+
+.top_mv .top_text .inner_text:nth-child(1) {
+  margin-left: 5rem;
+}
+
+.top_mv .top_text .inner_text .t_color {
+  color: #21A937;
 }
 
 .container {
@@ -24,12 +111,8 @@ body p {
 }
 
 .container .treatment {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .container .treatment .content {
@@ -40,16 +123,9 @@ body p {
   padding: 0 24px;
   height: 590px;
   background: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media (max-width: 767px) {
@@ -74,8 +150,6 @@ body p {
 }
 
 .main_content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 664px;
 }
@@ -117,8 +191,7 @@ body p {
 
 .news-list {
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  -webkit-box-shadow: 0px 3px 6px #00000029;
-          box-shadow: 0px 3px 6px #00000029;
+  box-shadow: 0px 3px 6px #00000029;
   border-radius: 30px;
   opacity: 1;
   margin-top: 70px;
@@ -176,4 +249,83 @@ table tr .td--text {
 .main_img img {
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
+
+.footer {
+  display: flex;
+  padding: 12rem 0 10rem;
+}
+
+.footer .map {
+  width: 600px;
+  height: 440px;
+}
+
+.footer .information {
+  padding-left: 2rem;
+  width: calc(100% - 600px - 2rem);
+}
+
+.footer .information .address {
+  display: flex;
+}
+
+.footer .information .address .post {
+  padding-right: 1rem;
+}
+
+.footer .info_detail {
+  border-bottom: 2px solid #E7E7E7;
+  border-top: 2px solid #E7E7E7;
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.footer .info_detail .info_block {
+  display: flex;
+  padding-top: 1rem;
+}
+
+.footer .info_detail .info_block .info_name, .footer .info_detail .info_block .weekday, .footer .info_detail .info_block .time_am, .footer .info_detail .info_block .time_pm, .footer .info_detail .info_block .holiday {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer .info_detail .info_block .info_name {
+  width: 17%;
+}
+
+.footer .info_detail .info_block .time_am {
+  padding-right: 2rem;
+}
+
+.footer .info_detail .info_block .info_week {
+  padding-left: 2rem;
+  border-left: 2px solid #E7E7E7;
+}
+
+.footer .info_detail .info_block .info_week .time_detail {
+  display: flex;
+}
+
+.footer .info_detail .info_block .info_week .time_detail .weekday {
+  margin-right: 2rem;
+  position: relative;
+}
+
+.footer .info_detail .info_block .info_week .time_detail .weekday::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: 12px;
+  background: #99E5A5;
+  z-index: -1;
+}
+
+.copyright {
+  text-align: right;
+  margin-top: -12rem;
+  font-size: 11px;
+}

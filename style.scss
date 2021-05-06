@@ -1,4 +1,15 @@
 body{
+	color: #444444;
+	font-family: 'Noto Sans JP', sans-serif;
+	& ,h1 {
+		margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+	}
 	h2{
 		font-size: 24px;
 	}
@@ -8,6 +19,76 @@ body{
 	}
 }
 
+//---------- Header ----------//
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 0;
+	.top_access {
+		display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+		.reception_time {
+			font-size: 14px;
+			padding-bottom: 10px;
+		}
+	}
+}
+
+.telephone {
+	display: flex;
+	align-items: center;
+	.tel {
+		margin: 0;
+		font-size: 24px;
+		padding-left: 5px;
+		a {
+			text-decoration: none;
+			font-weight: bold;
+			color: #21A937;
+		}
+	}
+}
+
+.top_mv {
+	position: relative;
+	img {
+		width: 100%;
+	}
+	.top_text {
+		display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 5px;
+		.inner_text {
+			writing-mode: vertical-rl;
+			-webkit-writing-mode: vertical-rl;
+			-moz-writing-mode: vertical-rl;
+			-ms-writing-mode: vertical-rl;
+			background: white;
+			height: 50%;
+			padding: 2rem 2rem 0;
+			&:nth-child(1) {
+				margin-left: 5rem;
+			}
+			.t_color {
+				color: #21A937;
+			}
+		}
+	}
+}
+
+// -webkit- …… Google Chrome、Safari
+// -moz-    …… Firefox
+// -o-      …… Opera
+// -ms-     …… Internet Explorer
+
+//---------- Main ----------//
 .container{
 	width: 62%;
 	margin: 0 auto;
@@ -136,4 +217,72 @@ table {
 	img{
 		width: 100%;
 	}
+}
+
+//---------- Footer ----------//
+.footer {
+	display: flex;
+	padding: 12rem 0 10rem;
+	.map {
+		width: 600px;
+    height: 440px;
+	}
+	.information {
+		padding-left: 2rem;
+		width: calc(100% - 600px - 2rem);
+		.address {
+			display: flex;
+			.post {
+				padding-right: 1rem;
+			}
+		}
+	}
+	.info_detail {
+		border-bottom: 2px solid #E7E7E7;
+    border-top: 2px solid #E7E7E7;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+		.info_block {
+			display: flex;
+			padding-top: 1rem;
+			.info_name,.weekday,.time_am,.time_pm,.holiday {
+				margin: 0;
+				font-size: 14px;
+			}
+			.info_name {
+				width: 17%;
+			}
+			.time_am {
+				padding-right: 2rem;
+			}
+			.info_week {
+				padding-left: 2rem;
+    		border-left: 2px solid #E7E7E7;
+				.time_detail {
+					display: flex;
+					.weekday {
+						margin-right: 2rem;
+						position: relative;
+						&::after {
+							content: "";
+							display: block;
+							position: absolute;
+							width: 100%;
+							height: 4px;
+							left: 0;
+							bottom: 12px;
+							background: #99E5A5;
+							z-index: -1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.copyright {
+	text-align: right;
+	margin-top: -12rem;
+	font-size: 11px;
 }
