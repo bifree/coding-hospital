@@ -18,20 +18,43 @@ body{
 		line-height: 38px;
 	}
 }
+// @media (max-width: 767px) {}
 
 //---------- Header ----------//
-.header {
+#header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px 0;
+	@media (max-width: 767px) {
+    padding: 20px 0;
+	}
+	.top_logo {
+		@media (max-width: 767px) {
+			width: 50%;
+		}
+		img {
+			@media (max-width: 767px) {
+				width: 100%;
+			}
+		}
+	}
 	.top_access {
 		display: flex;
     flex-direction: column;
     align-items: flex-end;
+		@media (max-width: 767px) {
+			width: 45%;
+			margin: 0 0 0 auto;
+			text-align: right;
+		}
 		.reception_time {
 			font-size: 14px;
 			padding-bottom: 10px;
+			@media (max-width: 767px) {
+				font-size: 14px;
+    		padding: 0;
+			}
 		}
 	}
 }
@@ -39,10 +62,18 @@ body{
 .telephone {
 	display: flex;
 	align-items: center;
+	svg {
+		@media (max-width: 767px) {
+			width: 16px;
+		}
+	}
 	.tel {
 		margin: 0;
 		font-size: 24px;
 		padding-left: 5px;
+		@media (max-width: 767px) {
+			font-size: 14px;
+		}
 		a {
 			text-decoration: none;
 			font-weight: bold;
@@ -53,8 +84,15 @@ body{
 
 .top_mv {
 	position: relative;
+	@media (max-width: 767px) {
+		width: 100%;
+    height: 50vh;
+	}
 	img {
 		width: 100%;
+		@media (max-width: 767px) {
+			height: 100%;
+		}
 	}
 	.top_text {
 		display: flex;
@@ -65,6 +103,9 @@ body{
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 5px;
+		@media (max-width: 767px) {
+			font-size: 14px;
+		}
 		.inner_text {
 			writing-mode: vertical-rl;
 			-webkit-writing-mode: vertical-rl;
@@ -72,9 +113,16 @@ body{
 			-ms-writing-mode: vertical-rl;
 			background: white;
 			height: 50%;
-			padding: 2rem 2rem 0;
+			padding: 2rem;
+			@media (max-width: 767px) {
+				height: 35%;
+    		padding: 1rem;
+			}
 			&:nth-child(1) {
 				margin-left: 5rem;
+				@media (max-width: 767px) {
+					margin-left: 1rem;
+				}
 			}
 			.t_color {
 				color: #21A937;
@@ -223,17 +271,22 @@ table {
 .footer {
 	display: flex;
 	padding: 12rem 0 10rem;
+	@media (max-width: 767px) {}
 	.map {
 		width: 600px;
     height: 440px;
+		@media (max-width: 767px) {}
 	}
 	.information {
 		padding-left: 2rem;
 		width: calc(100% - 600px - 2rem);
+		@media (max-width: 767px) {}
 		.address {
 			display: flex;
+			@media (max-width: 767px) {}
 			.post {
 				padding-right: 1rem;
+				@media (max-width: 767px) {}
 			}
 		}
 	}
@@ -242,27 +295,35 @@ table {
     border-top: 2px solid #E7E7E7;
     padding-bottom: 1rem;
     margin-top: 1rem;
+		@media (max-width: 767px) {}
 		.info_block {
 			display: flex;
 			padding-top: 1rem;
+			@media (max-width: 767px) {}
 			.info_name,.weekday,.time_am,.time_pm,.holiday {
 				margin: 0;
 				font-size: 14px;
+				@media (max-width: 767px) {}
 			}
 			.info_name {
 				width: 17%;
+				@media (max-width: 767px) {}
 			}
 			.time_am {
 				padding-right: 2rem;
+				@media (max-width: 767px) {}
 			}
 			.info_week {
 				padding-left: 2rem;
     		border-left: 2px solid #E7E7E7;
+				@media (max-width: 767px) {}
 				.time_detail {
 					display: flex;
+					@media (max-width: 767px) {}
 					.weekday {
 						margin-right: 2rem;
 						position: relative;
+						@media (max-width: 767px) {}
 						&::after {
 							content: "";
 							display: block;
@@ -285,4 +346,5 @@ table {
 	text-align: right;
 	margin-top: -12rem;
 	font-size: 11px;
+	@media (max-width: 767px) {}
 }
