@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
   color: #444444;
   font-family: 'Noto Sans JP', sans-serif;
@@ -11,6 +13,12 @@ body, body h1 {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+}
+
+@media (max-width: 768px) {
+  header > .header{
+    margin-top: 20px;
+  }
 }
 
 body h2 {
@@ -241,6 +249,10 @@ body p {
     padding-top: 5rem;
     padding-bottom: 1rem;
   }
+
+  .main_content .text_block br {
+    display: none;
+  }
 }
 
 .main_content .main_img {
@@ -263,6 +275,12 @@ body p {
 .contents {
   background: #F5FCF8;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .contents {
+    height: 2200px;
+  }
 }
 
 .contents .h2--treat {
@@ -326,6 +344,7 @@ body p {
   .contents .treatment .content .content-title {
     margin: 0;
     padding: 2rem 0;
+    font-size: 16px;
   }
 }
 
@@ -335,9 +354,14 @@ body p {
 }
 
 @media (max-width: 767px) {
+  .contents .treatment .content .content-text {
+    margin: 0 auto;
+  }
+
   .contents .treatment .content .content-text p {
     margin: 0;
     padding-left: 1rem;
+    font-size: 12px;
   }
 }
 
@@ -359,6 +383,18 @@ body p {
   margin-top: 70px;
   text-align: center;
   padding: 40px 0;
+}
+
+@media (max-width: 767px) {
+  .h2--news {
+    padding-top: 0px;
+  }
+
+  .news-list {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
 }
 
 table {
@@ -401,6 +437,45 @@ table tr .td--text {
   color: #000;
   text-decoration: none;
   display: inline-block;
+}
+
+@media (max-width: 767px) {
+  table {
+    font-size: 12px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+  
+  table tr td {
+    border-bottom: 1px solid #00000029;
+    letter-spacing: 0px;
+    padding-left: 5px;
+  }
+  
+  table tr td .category {
+    background: #000;
+    color: #fff;
+  }
+  
+  table tr .td--date {
+    color: #21A937;
+  }
+  
+  table tr .td--text {
+    text-align: initial;
+    width: 60%;
+    line-height: 2.5em;
+  }
+
+  .show_all {
+    padding-top: 10px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .show_all a {
+    font-size: 6px;
+  }
 }
 
 .footer {
