@@ -87,12 +87,6 @@ body p {
 }
 
 @media (max-width: 767px) {
-  .telephone {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 767px) {
   .telephone svg {
     width: 16px;
   }
@@ -157,6 +151,7 @@ body p {
     flex-direction: row;
     display: block;
     margin-top: 200px;
+  }
 }
 
 .top_mv .top_text .inner_text {
@@ -678,4 +673,4 @@ table tr .td--text {
     padding: 1rem 0;
     background: #F5FCF8;
   }
- }
+}
