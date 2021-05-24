@@ -87,12 +87,6 @@ body p {
 }
 
 @media (max-width: 767px) {
-  .telephone {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 767px) {
   .telephone svg {
     width: 16px;
   }
