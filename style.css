@@ -154,7 +154,9 @@ body p {
     font-size: 14px;
     top: 5%;
     left: 5%;
-  }
+    flex-direction: row;
+    display: block;
+    margin-top: 200px;
 }
 
 .top_mv .top_text .inner_text {
@@ -169,8 +171,10 @@ body p {
 
 @media (max-width: 767px) {
   .top_mv .top_text .inner_text {
+    writing-mode: horizontal-tb;
     height: 35%;
-    padding: 1rem;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -180,7 +184,8 @@ body p {
 
 @media (max-width: 767px) {
   .top_mv .top_text .inner_text:nth-child(1) {
-    margin-left: 1rem;
+    margin-left: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -190,7 +195,7 @@ body p {
 
 .container {
   width: 62%;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
 }
 
 @media (max-width: 767px) {
@@ -277,9 +282,9 @@ body p {
   text-align: center;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px){
   .contents {
-    height: 2200px;
+    padding-bottom: 30px;
   }
 }
 
@@ -360,8 +365,13 @@ body p {
 
   .contents .treatment .content .content-text p {
     margin: 0;
-    padding-left: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 12px;
+  }
+
+  .contents .treatment .content .content-text br{
+    display: none;
   }
 }
 
@@ -464,7 +474,7 @@ table tr .td--text {
   table tr .td--text {
     text-align: initial;
     width: 60%;
-    line-height: 2.5em;
+    line-height: 3em;
   }
 
   .show_all {
@@ -474,7 +484,7 @@ table tr .td--text {
   }
 
   .show_all a {
-    font-size: 6px;
+    font-size: 10px;
   }
 }
 
@@ -668,4 +678,4 @@ table tr .td--text {
     padding: 1rem 0;
     background: #F5FCF8;
   }
-}
+ }
